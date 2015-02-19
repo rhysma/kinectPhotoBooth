@@ -1,0 +1,39 @@
+﻿<Application x:Class="KinectBackgroundRemoval.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <SolidColorBrush x:Key="BlueBrush" Color="#FF00BCF2" />
+            <SolidColorBrush x:Key="MediumGreyBrush" Color="#ff6e6e6e"/>
+            <BitmapImage x:Key="beach" UriSource="Assets/beach.jpg" />
+            <BitmapImage x:Key="underwater" UriSource="Assets/underwater.jpg" />
+            <BitmapImage x:Key="mars" UriSource="Assets/Mars.jpg" />
+            <BitmapImage x:Key="park" UriSource="Assets/Park.jpg" />
+            <BitmapImage x:Key="space" UriSource="Assets/space.jpg" />
+            <BitmapImage x:Key="motorcycle" UriSource="Assets/motorcycle.jpg" />
+            <BitmapImage x:Key="sports" UriSource="Assets/sports.jpg" />
+            <BitmapImage x:Key="kimKanye" UriSource="Assets/kimKanye.jpg" />
+            <BitmapImage x:Key="theQueen" UriSource="Assets/TheQueen.jpg" />
+            <BitmapImage x:Key="bond" UriSource="Assets/bond.jpg" />
+            <BitmapImage x:Key="superman" UriSource="Assets/superman.jpeg" />
+            <BitmapImage x:Key="liberty" UriSource="Assets/liberty.jpg" />
+
+            <Style TargetType="Button">
+                <Setter Property="Height" Value="208" />
+                <Setter Property="Width" Value="208" />
+            </Style>
+            <ResourceDictionary.MergedDictionaries>
+
+                <ResourceDictionary Source="Common/StandardStyles.xaml"/>
+
+                 
+                    <!--Styles that define look and feel of Kinect controls-->  
+                
+                <ResourceDictionary Source="HandPointers/HandPointerStyles.xaml"/>
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        
+    </Application.Resources>
+</Application>
